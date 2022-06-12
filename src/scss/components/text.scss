@@ -1,0 +1,48 @@
+@import "../vars";
+.display1 {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 128%;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    color: $primary;
+    img {
+        margin-left: 20px;
+    }
+}
+
+.display2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 117%;
+    letter-spacing: -0.02em;
+}
+
+p {
+    font-size: 15px;
+    line-height: 133%;
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .display1 {
+        font-size: 40px;
+        img {
+            width: 40px;
+            margin-left: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .display1 {
+        font-size: 30px;
+        img {
+            width: 30px;
+            margin-left: 10px;
+        }
+    }
+}

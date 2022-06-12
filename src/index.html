@@ -1,0 +1,311 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html')
+        <main class="content">
+
+            <section class='main'>
+                <div class='container'>
+                    <div class='main__inner'>
+                        <div class="main__title">
+                            <span>Творческое пространство</span>
+                            <span>От студии до сцены</span>
+                        </div>
+                        <div class="main__img">
+                            Sonata
+                        </div>
+                        <div class="main__subtitle">Выступление на сцене каждый месяц</div>
+                        <button class="main__btn btn btn-green" data-bs-toggle="modal" data-bs-target="#modal1">Записаться на занятие с 50% скидкой</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class='direction'>
+                <div class='container'>
+                    <div class="direction__title display1">
+                        <span>Направления</span>
+                        <img src="img/wave.svg" alt="">
+                    </div>
+                    <div class='direction__items'>
+                        <a href="" class="direction__item">
+                            <div class="direction__item-icon">
+                                <img src="img/direction-icon.webp" alt="">
+                            </div>
+                            <div class="direction__item-title">Вокал</div>
+                        </a>
+                        <a href="" class="direction__item">
+                            <div class="direction__item-icon">
+                                <img src="img/direction-icon2.webp" alt="">
+                            </div>
+                            <div class="direction__item-title">Гитара</div>
+                        </a>
+                        <a href="" class="direction__item">
+                            <div class="direction__item-icon">
+                                <img src="img/direction-icon3.webp" alt="">
+                            </div>
+                            <div class="direction__item-title">Барабан</div>
+                        </a>
+                        <a href="" class="direction__item">
+                            <div class="direction__item-icon">
+                                <img src="img/direction-icon4.webp" alt="">
+                            </div>
+                            <div class="direction__item-title">Фортепиано </div>
+                        </a>
+                        <a href="" class="direction__item">
+                            <div class="direction__item-icon">
+                                <img src="img/direction-icon5.webp" alt="">
+                            </div>
+                            <div class="direction__item-title">Теория музыки</div>
+                        </a>
+                        <a href="" class="direction__item">
+                            <div class="direction__item-icon">
+                                <img src="img/direction-icon6.webp" alt="">
+                            </div>
+                            <div class="direction__item-title">Сценическое движение</div>
+                        </a>
+                        <a href="" class="direction__item">
+                            <div class="direction__item-icon">
+                                <img src="img/direction-icon7.webp" alt="">
+                            </div>
+                            <div class="direction__item-title">Ансамбль</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class='teachers'>
+                <div class='container'>
+                    <div class='teachers__top'>
+                        <div class="teachers__title display1">
+                            <span>Педагоги</span>
+                            <img src="img/wave.svg" alt="">
+                        </div>
+                        <div class="teachers__category">
+                            <div class="teachers__category-title">НАПРАВЛЕНИЕ</div>
+                            <select class="teachers__category-select">
+                                <option selected>ГИТАРА</option>
+                                <option>ГИТАРА 2</option>
+                                <option>ГИТАРА 3</option>
+                            </select>
+                        </div>
+                        <div class="teachers__nav">
+                            <div class='swiper-button-prev'>
+                                <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.646446 4.35356C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464468C4.02369 0.269206 4.34027 0.269206 4.53553 0.464468C4.7308 0.65973 4.7308 0.976313 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53554C4.34027 7.7308 4.02369 7.7308 3.82843 7.53554L0.646446 4.35356ZM25 4.5L1 4.5L1 3.5L25 3.5L25 4.5Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class='swiper-button-next'>
+                                <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.3536 4.35356C24.5488 4.15829 24.5488 3.84171 24.3536 3.64645L21.1716 0.464468C20.9763 0.269206 20.6597 0.269206 20.4645 0.464468C20.2692 0.65973 20.2692 0.976313 20.4645 1.17157L23.2929 4L20.4645 6.82843C20.2692 7.02369 20.2692 7.34027 20.4645 7.53554C20.6597 7.7308 20.9763 7.7308 21.1716 7.53554L24.3536 4.35356ZM-4.37114e-08 4.5L24 4.5L24 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="black"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="teachers__slider">
+                        <div class='swiper-container'>
+                            <div class='swiper-wrapper'>
+                                <div class='swiper-slide'>
+                                    <div class="teacher">
+                                        <div class="teacher__left">
+                                            <div class="teacher__category">[ ГИТАРА ]</div>
+                                            <div class="teacher__title">Иванов Александр</div>
+                                            <div class="teacher__desc">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                            </div>
+                                            <button class="teacher__btn btn btn-green" data-bs-toggle="modal" data-bs-target="#modal1">Записаться на первое занятие</button>
+                                        </div>
+                                        <div class="teacher__center">
+                                            <div class="teacher__img">
+                                                <img src="img/man.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="teacher__right">
+                                            <img src="img/guitar.png" alt="" class="teacher__icon">
+                                            <div class="teacher__desc">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide'>
+                                    <div class="teacher">
+                                        <div class="teacher__left">
+                                            <div class="teacher__category">[ ГИТАРА ]</div>
+                                            <div class="teacher__title">Иванов Александр</div>
+                                            <div class="teacher__desc">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                            </div>
+                                            <button class="teacher__btn btn btn-green" data-bs-toggle="modal" data-bs-target="#modal1">Записаться на первое занятие</button>
+                                        </div>
+                                        <div class="teacher__center">
+                                            <div class="teacher__img">
+                                                <img src="img/man.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="teacher__right">
+                                            <img src="img/guitar.png" alt="" class="teacher__icon">
+                                            <div class="teacher__desc">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <button class="teacher__btn2 btn btn-green" data-bs-toggle="modal" data-bs-target="#modal1">Записаться на первое занятие</button>
+                </div>
+            </section>
+
+            <section class='best'>
+                <div class='container'>
+                    <div class="best__title display1">
+                        <span>Только лучшее для наших учеников</span>
+                        <span>
+                            <img src="img/wave.svg" alt="">
+                        </span>
+                    </div>
+                    <div class='best__items'>
+                        <div class="best__item">
+                            <div class="best__item-title display2">Оборудованные классы</div>
+                            <div class="best__item-desc">
+                                <p>Только высококлассное и качетсвенное оборудование во всех кабинетах студии. Это очень важный фактор при обучении. </p>
+                                <p>Уютная атмосфера и приветлиывые педагоги школы помогут вам погру-зиться в музыкальную творческую среду.</p>
+                            </div>
+                            <img src="img/best.webp" alt="">
+                        </div>
+                        <div class="best__item">
+                            <div class="best__item-title display2">Концерты в школе</div>
+                            <div class="best__item-desc">
+                                <p>Выступления на сцене школы каждый месяц бесплатно в кругу своих друзей и знакомых.</p>
+                            </div>
+                            <img src="img/best2.webp" alt="">
+                        </div>
+                        <div class="best__item">
+                            <div class="best__item-title display2">Студия звукозаписи</div>
+                            <div class="best__item-desc">
+                                <p>Ученики могут записать первый трек или кавер на профессиональной студии со звукорежиссером в нашей школе. </p>
+                            </div>
+                            <img src="img/best3.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='test'>
+                <div class='container'>
+                    <div class="best__title display1">
+                        <span>Тест на вокальные данные</span>
+                        <span>
+                            <img src="img/wave.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="test__info">
+                        <div class="test__desc">Какой-нибудб текст о том, как правильно проходить тест, сколько займет времени, куда будут присланы результаты, насколько он точный и т д</div>
+                        <div class="test__desc">Какой-нибудб текст о том, как правильно проходить тест, сколько займет времени, куда будут присланы результаты, насколько он точный и т д</div>
+                    </div>
+                    <button class="test__btn btn btn-green" data-bs-toggle="modal" data-bs-target="#modal1">Пройти тест</button>
+                </div>
+            </section>
+
+            <section class='gallery'>
+                <div class='container'>
+                    <div class="gallery__title display1">
+                        <span>Галерея</span>
+                        <span>
+                            <img src="img/wave.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="gallery__slider">
+                        <div class='swiper-container'>
+                            <div class='swiper-wrapper'>
+                                <div class='swiper-slide'>
+                                    <img src="img/gallery.webp" alt="">
+                                    <p class="gallery__desc">Сопроводительный текст. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                </div>
+                                <div class='swiper-slide'>
+                                    <img src="img/gallery.webp" alt="">
+                                    <p class="gallery__desc">Сопроводительный текст. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                </div>
+                                <div class='swiper-slide'>
+                                    <img src="img/gallery.webp" alt="">
+                                    <p class="gallery__desc">Сопроводительный текст. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                </div>
+                                <div class='swiper-slide'>
+                                    <img src="img/gallery.webp" alt="">
+                                    <p class="gallery__desc">Сопроводительный текст. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                </div>
+                            </div>
+                            <div class='swiper-button-prev'>
+                                <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.646446 4.35356C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464468C4.02369 0.269206 4.34027 0.269206 4.53553 0.464468C4.7308 0.65973 4.7308 0.976313 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53554C4.34027 7.7308 4.02369 7.7308 3.82843 7.53554L0.646446 4.35356ZM25 4.5L1 4.5L1 3.5L25 3.5L25 4.5Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class='swiper-button-next'>
+                                <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.3536 4.35356C24.5488 4.15829 24.5488 3.84171 24.3536 3.64645L21.1716 0.464468C20.9763 0.269206 20.6597 0.269206 20.4645 0.464468C20.2692 0.65973 20.2692 0.976313 20.4645 1.17157L23.2929 4L20.4645 6.82843C20.2692 7.02369 20.2692 7.34027 20.4645 7.53554C20.6597 7.7308 20.9763 7.7308 21.1716 7.53554L24.3536 4.35356ZM-4.37114e-08 4.5L24 4.5L24 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="black"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class='swiper-pagination'></div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class='contacts'>
+                <div class='container'>
+                    <div class="gallery__title display1">
+                        <span>Контакты</span>
+                        <span>
+                            <img src="img/wave.svg" alt="">
+                        </span>
+                    </div>
+                    <div class='contacts__inner'>
+                        <div class="contacts__left">
+                            <div class="contacts__logo">
+                                <span class="contacts__logo-text1">SONATA</span>
+                                <span class="contacts__logo-text2">МУЗЫКАЛЬНАЯ ШКОЛА-СТУДИЯ</span>
+                            </div>
+                            <div class="contacts__address display2">Москва, Большая Грузинская, 58</div>
+                            <a href="tel:+79162020604" class="contacts__phone">+7 916 202-06-04</a>
+                            <a href="mailto:sonata@gmail.com" class="contacts__mail display2">sonata@gmail.com</a>
+                            <div class="contacts__socials">
+                                <a href="" class="contacts__socials-item">
+                                    <img src="img/instagram2.svg" alt="">
+                                </a>
+                                <a href="" class="contacts__socials-item">
+                                    <img src="img/telegram2.svg" alt="">
+                                </a>
+                                <a href="" class="contacts__socials-item">
+                                    <img src="img/vk2.svg" alt="">
+                                </a>
+                                <a href="" class="contacts__socials-item">
+                                    <img src="img/whatsapp2.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contacts__map" id="map">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6310752e012960749a9d0d2d0de27b5c70a15bf2ee684c93b24ed59819eb95a0&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        @@include('components/page-blocks/_footer.html')
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

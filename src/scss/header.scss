@@ -1,0 +1,191 @@
+@import "vars";
+.header {
+    padding: 16px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(#0A1026, .5);
+    color: #fff;
+    &__bg,
+    &__burger,
+    &__socials {
+        display: none;
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+    &__left {
+        display: flex;
+        align-items: flex-end;
+        flex-shrink: 0;
+        transform: translateY(-5px);
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+    }
+    &__logo {
+        width: 65px;
+        display: block;
+        flex-shrink: 0;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    &__info {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: $primary;
+        margin-left: 17px;
+        max-width: 98px;
+    }
+    &__contacts {
+        text-align: right;
+    }
+    &__address,
+    &__phone {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    &__phone {
+        display: block;
+        margin-top: 1px;
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin: 0 60px;
+    &__link {
+        padding: 4px 0;
+        border-bottom: 1px solid transparent;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        &:hover {
+            border-color: #fff;
+            color: #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .nav {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        padding: 12px 0;
+        &__left {
+            width: 100%;
+            justify-content: space-between;
+        }
+        &__right {
+            position: fixed;
+            max-width: 100%;
+            width: 238px;
+            height: 100vh;
+            right: -100%;
+            top: 0;
+            background: #191E1D;
+            z-index: 31;
+            padding: 40px 40px 70px;
+            flex-direction: column;
+            align-items: unset;
+            transition: all .225s;
+            &--active {
+                right: 0;
+                &~.header__bg {
+                    display: block;
+                }
+            }
+        }
+        &__logo {
+            width: 57px;
+        }
+        &__info {
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            max-width: 124px;
+            margin: 0;
+        }
+        &__burger {
+            transition: all .225s;
+            width: 30px;
+            height: 30px;
+            display: block;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url(../img/burger.svg);
+            background-size: 100% auto;
+            &--active {
+                background-image: url(../img/burger2.svg);
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                width: 32px;
+                height: 32px;
+            }
+        }
+        &__bg {
+            background: rgba(255, 255, 255, 0.3);
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 30;
+        }
+        &__contacts {
+            text-align: left;
+        }
+        &__address,
+        &__phone {
+            font-size: 13px;
+            line-height: 155%;
+        }
+        &__socials {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            &-item {
+                margin-right: 9.6px;
+                img {
+                    transition: all .225s;
+                }
+                &:hover {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+    .nav {
+        display: block;
+        margin: 0;
+        &__link {
+            display: block;
+            font-size: 20px;
+            line-height: 23px;
+            margin-bottom: 10px;
+            border: none;
+            padding: 0;
+            &:hover {
+                color: $primaryHover;
+            }
+        }
+    }
+}

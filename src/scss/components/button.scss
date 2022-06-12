@@ -1,0 +1,39 @@
+@import "../vars";
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-out .225s;
+    padding: 0;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.btn-green {
+    border-radius: 100px;
+    background-color: $primary;
+    color: #fff;
+    letter-spacing: 0.1px;
+    font-weight: 500;
+    &:hover {
+        background-color: $primaryHover;
+        color: #fff;
+    }
+}
+
+.swiper-button {
+    &-prev,
+    &-next {
+        width: 60px;
+        height: 60px;
+        border: 1px solid $black;
+        border-radius: 50%;
+        &:hover {
+            background-color: $black;
+            path {
+                fill: #fff;
+            }
+        }
+    }
+}
