@@ -37,7 +37,7 @@ $(document).ready(function() {
 
     $(".header__burger").click(function() {
         $(".header__right").toggleClass("header__right--active")
-        $("body").addClass("fixed-body")
+        $("body").toggleClass("fixed-body")
     })
 
     $(".header__bg").click(function() {
